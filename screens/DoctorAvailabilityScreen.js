@@ -3,7 +3,7 @@ import { View, Text, TextInput, TouchableOpacity, StyleSheet, Alert } from 'reac
 import { useAuth } from '../contexts/AuthContext';
 import * as SecureStore from 'expo-secure-store';
 
-const API_URL = 'http://localhost:3000/api';
+import { API_URL } from '../config';
 
 export default function DoctorAvailabilityScreen({ navigation }) {
   const [date, setDate] = useState('');

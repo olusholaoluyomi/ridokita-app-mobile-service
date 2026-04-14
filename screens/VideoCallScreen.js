@@ -8,8 +8,8 @@ import { Camera } from 'expo-camera';
 import { Audio } from 'expo-av';
 import { useAuth } from '../contexts/AuthContext';
 
-const API_URL = 'http://localhost:3000';
-const socket = io(API_URL);
+import { API_URL, SOCKET_URL } from '../config';
+const socket = io(SOCKET_URL);
 
 export default function VideoCallScreen({ route, navigation }) {
   const { appointmentId } = route.params;

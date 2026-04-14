@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { View, Text, TextInput, TouchableOpacity, StyleSheet, Alert } from 'react-native';
 import { Picker } from '@react-native-picker/picker';
 
-const API_URL = 'http://localhost:3000/api'; // Change to your backend URL
+import { API_URL } from '../config';
 
 export default function RegisterScreen({ navigation }) {
   const [email, setEmail] = useState('');

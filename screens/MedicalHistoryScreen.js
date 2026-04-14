@@ -4,7 +4,7 @@ import { useAuth } from '../contexts/AuthContext';
 import * as SecureStore from 'expo-secure-store';
 import * as FileSystem from 'expo-file-system';
 
-const API_URL = 'http://localhost:3000/api';
+import { API_URL } from '../config';
 
 export default function MedicalHistoryScreen() {
   const [appointments, setAppointments] = useState([]);
